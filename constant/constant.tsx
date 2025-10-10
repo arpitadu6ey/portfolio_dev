@@ -1,0 +1,27 @@
+export const NavLinks = [
+    {
+        id:1,
+        url:"#",
+        Label:"Home",
+    },
+    {
+        id:2,
+        url:"#",
+        Label:"Skills",
+    },
+    {
+        id:3,
+        url:"#",
+        Label:"Projects",
+    },
+    {
+        id:4,
+        url:"#",
+        Label:"Testimonial",
+    },
+    {
+        id:5,
+        url:"#",
+        Label:"Contact",
+    },
+]
