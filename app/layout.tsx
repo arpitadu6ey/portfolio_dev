@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
-import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Home/Footer/Footer";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
 
@@ -24,17 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased dark`}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          > 
-            <ResponsiveNav />
-            {children}
-            <Footer/>
-            <ScrollToTop/>
-        </ThemeProvider>
+        <ResponsiveNav />
+        {children}
+        <Footer/>
+        <ScrollToTop/>
       </body>
     </html>
   );
